@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Croissant+One&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+:root {
+    --bg-color: #ee0979;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    border: 1px solid black;
+}
+
+.relative-positioned {
+    position: relative;
+    padding: 0;
+}
+
+.spaced {
+    letter-spacing: 1.2px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu {
+    display: none;
+}
+
+i {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: .7rem;
+}
+
+header {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    padding: 1.2rem 1rem;
+}
+
+.hero {
+    font-size: 1.5rem;
+    background: url(resources/images/bg.PNG) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 25vh 30px;
+    max-height: 700px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.about {
+    font-size: .9rem;
+}
+
+button {
+    padding: 1.5rem 2.2rem;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50px;
+    font-size: .9rem;
+}
+
+.image-div {
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 70vw;
+}
+
+.image-div img {
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+footer {
+    font-size: .8rem;
+}
+
+.about div {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1.2rem 2rem !important;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .about {
+        font-size: 1rem;
+    }
+    .image-div {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 1.2rem 400px !important;
+    }
+    .about {
+        padding: 1.2rem 400px !important;
+    }
+    .image-div {
+        width: 600px;
+    }
+    .hero h1 {
+        font-size: 5rem;
+    }
+    h2, .hero p {
+        font-size: 3rem;
+    }
+    .menu-icon {
+        visibility: hidden;
+    }
+    #menu {
+        display: flex;
+        gap: 1rem;
+        opacity: .5;
+    }
+}
